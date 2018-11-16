@@ -1,18 +1,10 @@
 public class User {
 
-    private long id;
 
     private String username;
     private String password;
     private String role;
 
-    public long getID() {
-        return id;
-    }
-
-    public void setID(long id) {
-        this.id = id;
-    }
 
     public String getUsername() {
         return username;

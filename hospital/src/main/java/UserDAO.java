@@ -7,7 +7,7 @@ import java.util.List;
 
 public class UserDAO {
 
-    public static boolean userWithIDExists(long userID){
+    public static boolean userWithUsernameExists(String username){
         Connection con = null;
         Statement stmt = null;
         ResultSet result = null;
@@ -18,10 +18,39 @@ public class UserDAO {
                     "jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
             stmt = con.createStatement();
             result = stmt.executeQuery(
-                    "SELECT * FROM user WHERE userID = '"+userID+"'");
+                    "SELECT * FROM user WHERE username = '"+username+"'");
             while(result.next()){
                 output= true;
             }
+        } catch (Exception e) {
+            e.printStackTrace(System.out);
+        }
+        return output;
+    }
+
+
+    public static boolean login(String username, String password){
+        Connection con = null;
+        Statement stmt = null;
+        ResultSet result = null;
+        boolean output = false;
+        try {
+            Class.forName("org.hsqldb.jdbc.JDBCDriver");
+            con = DriverManager.getConnection(
+                    "jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
+            stmt = con.createStatement();
+            result = stmt.executeQuery(
+                    "SELECT * FROM user WHERE username = '"+username+"'");
+            while(result.next()){
+                String pass = result.getString("password");
+                if (pass.equals(password)){
+                    output= true;
+                }else {
+                    output = false;
+                }
+
+            }
+
         } catch (Exception e) {
             e.printStackTrace(System.out);
         }
@@ -36,7 +65,7 @@ public class UserDAO {
             Class.forName("org.hsqldb.jdbc.JDBCDriver");
             con = DriverManager.getConnection( "jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
             stmt = con.createStatement();
-            result = stmt.executeUpdate("INSERT INTO user VALUES ('"+user.getID()+"','"+user.getUsername()+"','" + user.getPassword()+"','"+ user.getRole()+"');");
+            result = stmt.executeUpdate("INSERT INTO user VALUES ('"+user.getUsername()+"','"+user.getUsername()+"','" + user.getPassword()+"','"+ user.getRole()+"');");
             con.commit();
         }catch (Exception e) {
             e.printStackTrace(System.out);
@@ -63,9 +92,9 @@ public class UserDAO {
                     "jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
             stmt = con.createStatement();
             result = stmt.executeQuery(
-                    "SELECT userID FROM user WHERE id = '"+user.getID()+"'");
+                    "SELECT userID FROM user WHERE id = '"+user.getUsername()+"'");
 
-            us.setID(result.getLong("userID"));
+            us.setUsername(result.getString("username"));
 
         } catch (Exception e) {
             e.printStackTrace(System.out);

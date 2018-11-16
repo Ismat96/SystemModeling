@@ -14,6 +14,11 @@ public class DatabaseManager {
 			stmt.executeUpdate("CREATE TABLE student (studentID varchar(20) NOT NULL, PRIMARY KEY (studentID));");
 			stmt.executeUpdate("CREATE TABLE course (title varchar(20) NOT NULL, PRIMARY KEY (title));");			
 			stmt.executeUpdate("CREATE TABLE enrollment (studentID varchar(20) NOT NULL, title varchar(20) NOT NULL, PRIMARY KEY (studentID,title), FOREIGN KEY (studentID) REFERENCES student(studentID), FOREIGN KEY (title) REFERENCES course(title));");
+
+
+			stmt.executeUpdate("CREATE TABLE user (username varchar(20) NOT NULL,  PRIMARY KEY,  password varchar(20) NOT NULL, role varchar(50) NOT NULL);");
+
+
 			System.out.println("Database initialized successfully");
 		}catch (Exception e) {
 			e.printStackTrace(System.out);
