@@ -2,6 +2,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserDAO {
 
@@ -45,5 +47,29 @@ public class UserDAO {
         else{
             return true;
         }
+    }
+
+
+    public static User getUser(User user){
+        Connection con = null;
+        Statement stmt = null;
+        ResultSet result = null;
+//        ArrayList<Student> output = new ArrayList<Student>();
+
+        User us = new User();
+        try {
+            Class.forName("org.hsqldb.jdbc.JDBCDriver");
+            con = DriverManager.getConnection(
+                    "jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
+            stmt = con.createStatement();
+            result = stmt.executeQuery(
+                    "SELECT userID FROM user WHERE id = '"+user.getID()+"'");
+
+            us.setID(result.getLong("userID"));
+
+        } catch (Exception e) {
+            e.printStackTrace(System.out);
+        }
+        return us;
     }
 }
