@@ -16,8 +16,9 @@ public class DatabaseManager {
 			stmt.executeUpdate("CREATE TABLE enrollment (studentID varchar(20) NOT NULL, title varchar(20) NOT NULL, PRIMARY KEY (studentID,title), FOREIGN KEY (studentID) REFERENCES student(studentID), FOREIGN KEY (title) REFERENCES course(title));");
 
 
-			stmt.executeUpdate("CREATE TABLE user (username varchar(20) NOT NULL,  PRIMARY KEY,  password varchar(20) NOT NULL, role varchar(50) NOT NULL);");
+			stmt.executeUpdate("CREATE TABLE user (username varchar(20) NOT NULL,  PRIMARY KEY(username),  password varchar(20) NOT NULL, role varchar(50) NOT NULL);");
 
+            stmt.executeUpdate("CREATE TABLE medicine (id varchar(20) NOT NULL,  PRIMARY KEY(id),  name varchar(20) NOT NULL, companyName varchar(50) NOT NULL);");
 
 			System.out.println("Database initialized successfully");
 		}catch (Exception e) {

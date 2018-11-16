@@ -43,7 +43,9 @@ public class MedicineDAO {
 
             while(result.next()){
                 Medicine m = new Medicine();
+                m.setId(result.getLong("id"));
                 m.setName(result.getString("name"));
+                m.setCompanyName(result.getString("companyName"));
                 output.add(m);
             }
         } catch (Exception e) {

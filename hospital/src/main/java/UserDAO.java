@@ -20,6 +20,8 @@ public class UserDAO {
             result = stmt.executeQuery(
                     "SELECT * FROM user WHERE username = '"+username+"'");
             while(result.next()){
+
+
                 output= true;
             }
         } catch (Exception e) {
@@ -65,7 +67,7 @@ public class UserDAO {
             Class.forName("org.hsqldb.jdbc.JDBCDriver");
             con = DriverManager.getConnection( "jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
             stmt = con.createStatement();
-            result = stmt.executeUpdate("INSERT INTO user VALUES ('"+user.getUsername()+"','"+user.getUsername()+"','" + user.getPassword()+"','"+ user.getRole()+"');");
+            result = stmt.executeUpdate("INSERT INTO user VALUES ('"+user.getUsername()+"','" + user.getPassword()+"','"+ user.getRole()+"');");
             con.commit();
         }catch (Exception e) {
             e.printStackTrace(System.out);
@@ -79,26 +81,26 @@ public class UserDAO {
     }
 
 
-    public static User getUser(User user){
-        Connection con = null;
-        Statement stmt = null;
-        ResultSet result = null;
-//        ArrayList<Student> output = new ArrayList<Student>();
-
-        User us = new User();
-        try {
-            Class.forName("org.hsqldb.jdbc.JDBCDriver");
-            con = DriverManager.getConnection(
-                    "jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
-            stmt = con.createStatement();
-            result = stmt.executeQuery(
-                    "SELECT userID FROM user WHERE id = '"+user.getUsername()+"'");
-
-            us.setUsername(result.getString("username"));
-
-        } catch (Exception e) {
-            e.printStackTrace(System.out);
-        }
-        return us;
-    }
+//    public static User getUser(User user){
+//        Connection con = null;
+//        Statement stmt = null;
+//        ResultSet result = null;
+////        ArrayList<Student> output = new ArrayList<Student>();
+//
+//        User us = new User();
+//        try {
+//            Class.forName("org.hsqldb.jdbc.JDBCDriver");
+//            con = DriverManager.getConnection(
+//                    "jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
+//            stmt = con.createStatement();
+//            result = stmt.executeQuery(
+//                    "SELECT userID FROM user WHERE id = '"+user.getUsername()+"'");
+//
+//            us.setUsername(result.getString("username"));
+//
+//        } catch (Exception e) {
+//            e.printStackTrace(System.out);
+//        }
+//        return us;
+//    }
 }
