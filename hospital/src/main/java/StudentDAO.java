@@ -19,7 +19,7 @@ public class StudentDAO {
 					"SELECT * FROM student WHERE studentID = '"+studentID+"'");
 			while(result.next()){
 				output= true;
-			}		
+			}
 		} catch (Exception e) {
 			e.printStackTrace(System.out);
 		}
