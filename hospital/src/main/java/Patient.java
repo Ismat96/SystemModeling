@@ -1,11 +1,9 @@
-import java.util.Date;
-
 public class Patient {
     private String patientID;
     private String name;
     private String surname;
     private String date;
-    private String insuranceCOde;
+    private String insuranceCode;
 
     public String getPatientID() {
         return patientID;
@@ -23,8 +21,8 @@ public class Patient {
         return date;
     }
 
-    public String getInsuranceCOde() {
-        return insuranceCOde;
+    public String getInsuranceCode() {
+        return insuranceCode;
     }
 
     public void setPatientID(String patientID) {
@@ -43,7 +41,7 @@ public class Patient {
         this.date = date;
     }
 
-    public void setInsuranceCOde(String insuranceCOde) {
-        this.insuranceCOde = insuranceCOde;
+    public void setInsuranceCode(String insuranceCode) {
+        this.insuranceCode = insuranceCode;
     }
 }

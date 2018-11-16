@@ -24,7 +24,7 @@ public class PatientDAO {
             patient.setName(result.getString("name"));
             patient.setSurname(result.getString("surname"));
             patient.setDate(result.getString("date"));
-            patient.setInsuranceCOde(result.getString("insuranceCode"));
+            patient.setInsuranceCode(result.getString("insuranceCode"));
 
         } catch (Exception e) {
             e.printStackTrace(System.out);
@@ -44,7 +44,7 @@ public class PatientDAO {
                                                                             patient.getName()+"', '"+
                                                                             patient.getSurname()+"', '"+
                                                                             patient.getDate()+"', '"+
-                                                                            patient.getInsuranceCOde()+"', '"+
+                                                                            patient.getInsuranceCode()+"', '"+
                                                                          "' )");
             con.commit();
         }catch (Exception e) {
