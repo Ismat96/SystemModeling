@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6459396b-2d70-402f-bb1e-5b7c38e3238a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Medicine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MedicineDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserDAO.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -56,22 +61,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="15" />
+          <entry key="java" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="15" />
+          <entry key="JAVA" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="362" />
+          <entry key="java" value="993" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="361" />
+          <entry key="JAVA" value="992" />
           <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
@@ -80,6 +85,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+||||||| merged common ancestors
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+=======
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/Patient.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -154,10 +183,11 @@
               <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
 =======
       <file pinned="false" current-in-tab="false">
+>>>>>>> 92f69a4fa95952a36761ab75b18f7a26a765dda5
         <entry file="file://$PROJECT_DIR$/src/main/java/CourseDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-350">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="72">
+              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,15 +195,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PatientFolderDAO.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseManager.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="306">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+||||||| merged common ancestors
+            <state relative-caret-position="72">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+=======
             <state relative-caret-position="72">
               <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
 >>>>>>> f7b729f2c495e31346b0c769c46c63f0f50c50b2
+>>>>>>> 92f69a4fa95952a36761ab75b18f7a26a765dda5
             </state>
           </provider>
         </entry>
@@ -187,7 +228,7 @@
 =======
         <entry file="file://$PROJECT_DIR$/src/main/java/EnrollmentDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="204">
               <caret line="59" column="46" lean-forward="true" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
             </state>
           </provider>
@@ -196,13 +237,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-64">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
-                <element signature="e#151#152#0" expanded="true" />
-                <element signature="e#176#177#0" expanded="true" />
-                <element signature="e#210#211#0" expanded="true" />
-                <element signature="e#238#239#0" expanded="true" />
                 <element signature="e#273#274#0" expanded="true" />
                 <element signature="e#304#305#0" expanded="true" />
                 <element signature="e#352#353#0" expanded="true" />
@@ -220,11 +257,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/UserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="1139">
+              <caret line="73" column="25" lean-forward="true" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -235,6 +272,44 @@
       </file>
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/src/main/java/Medicine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+              <folding>
+                <element signature="e#153#154#0" expanded="true" />
+                <element signature="e#187#188#0" expanded="true" />
+                <element signature="e#215#216#0" expanded="true" />
+                <element signature="e#246#247#0" expanded="true" />
+                <element signature="e#273#274#0" expanded="true" />
+                <element signature="e#313#314#0" expanded="true" />
+                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#383#384#0" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#471#472#0" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MedicineDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1128#1138#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+||||||| merged common ancestors
+=======
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/PatientDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="463">
@@ -243,6 +318,7 @@
                 <element signature="imports" expanded="true" />
               </folding>
 =======
+>>>>>>> 92f69a4fa95952a36761ab75b18f7a26a765dda5
         <entry file="file://$PROJECT_DIR$/src/main/java/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -321,7 +397,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Boundary.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DatabaseManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/CourseDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/DAOs/PatientFolder.java" />
         <option value="$PROJECT_DIR$/src/main/java/DAOs/PatientFolderDAO.java" />
@@ -336,7 +411,14 @@
 =======
         <option value="$PROJECT_DIR$/src/main/java/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/UserDAO.java" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/main/java/Medicine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MedicineDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DatabaseManager.java" />
+||||||| merged common ancestors
+=======
 >>>>>>> f7b729f2c495e31346b0c769c46c63f0f50c50b2
+>>>>>>> 92f69a4fa95952a36761ab75b18f7a26a765dda5
       </list>
     </option>
   </component>
@@ -423,7 +505,7 @@
 =======
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542393531392" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542399095269" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
 >>>>>>> f7b729f2c495e31346b0c769c46c63f0f50c50b2
     <property name="project.structure.last.edited" value="Libraries" />
@@ -475,12 +557,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542378452270</updated>
-      <workItem from="1542390494115" duration="2970000" />
+      <workItem from="1542390494115" duration="8562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2970000" />
+    <option name="totallyTimeSpent" value="8562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -587,18 +669,40 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/PatientFolderDAO.java">
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/src/main/java/Student.java">
+=======
+<<<<<<< HEAD
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/sql/ResultSet.java">
 =======
     <entry file="file://$PROJECT_DIR$/src/main/java/Student.java">
+>>>>>>> 92f69a4fa95952a36761ab75b18f7a26a765dda5
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="72">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/StudentDAO.java">
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseManager.java">
+=======
     <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseManager.java">
 >>>>>>> f7b729f2c495e31346b0c769c46c63f0f50c50b2
+>>>>>>> 92f69a4fa95952a36761ab75b18f7a26a765dda5
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="136">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+||||||| merged common ancestors
+        <state relative-caret-position="204">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+=======
         <state relative-caret-position="179">
           <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
         </state>
@@ -651,34 +755,29 @@
             <element signature="e#180#181#0" expanded="true" />
             <element signature="e#210#211#0" expanded="true" />
           </folding>
+>>>>>>> 92f69a4fa95952a36761ab75b18f7a26a765dda5
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-64">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CourseDAO.java">
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/src/main/java/PatientFolderDAO.java">
+=======
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/EnrollmentDAO.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -693,16 +792,28 @@
           <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
 =======
     <entry file="file://$PROJECT_DIR$/src/main/java/PatientFolderDAO.java">
+>>>>>>> 92f69a4fa95952a36761ab75b18f7a26a765dda5
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
+<<<<<<< HEAD
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+||||||| merged common ancestors
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+=======
           <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
 >>>>>>> f7b729f2c495e31346b0c769c46c63f0f50c50b2
+>>>>>>> 92f69a4fa95952a36761ab75b18f7a26a765dda5
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/EnrollmentDAO.java">
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/src/main/java/StudentDAO.java">
+=======
     <entry file="file://$PROJECT_DIR$/src/main/java/PatientFolderDAO.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -718,45 +829,95 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Patient.java">
+>>>>>>> 92f69a4fa95952a36761ab75b18f7a26a765dda5
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="204">
+          <caret line="59" column="46" lean-forward="true" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+||||||| merged common ancestors
+        <state relative-caret-position="136">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+=======
         <state relative-caret-position="208">
           <caret line="37" column="44" lean-forward="true" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
 =======
         <state relative-caret-position="136">
           <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+>>>>>>> 92f69a4fa95952a36761ab75b18f7a26a765dda5
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CourseDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MedicineDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-350">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="510">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1128#1138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Medicine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding>
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="73" column="25" lean-forward="true" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/EnrollmentDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="59" column="46" lean-forward="true" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+||||||| merged common ancestors
+        <state relative-caret-position="245">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+=======
         <state relative-caret-position="245">
           <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
 >>>>>>> f7b729f2c495e31346b0c769c46c63f0f50c50b2
+>>>>>>> 92f69a4fa95952a36761ab75b18f7a26a765dda5
           <folding>
+<<<<<<< HEAD
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+||||||| merged common ancestors
+            <element signature="imports" expanded="true" />
+=======
             <element signature="e#221#222#0" expanded="true" />
             <element signature="e#253#254#0" expanded="true" />
             <element signature="e#284#285#0" expanded="true" />
@@ -776,10 +937,21 @@
             <element signature="e#503#504#0" expanded="true" />
             <element signature="e#561#562#0" expanded="true" />
             <element signature="e#611#612#0" expanded="true" />
+>>>>>>> 92f69a4fa95952a36761ab75b18f7a26a765dda5
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+||||||| merged common ancestors
+=======
     <entry file="file://$PROJECT_DIR$/src/main/java/Boundary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-727">
@@ -815,6 +987,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> 92f69a4fa95952a36761ab75b18f7a26a765dda5
   </component>
   <component name="masterDetails">
     <states>
