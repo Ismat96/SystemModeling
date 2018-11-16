@@ -12,7 +12,17 @@ public class DatabaseManager {
 			con = DriverManager.getConnection("jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
 			stmt = con.createStatement();
 			stmt.executeUpdate("CREATE TABLE student (studentID varchar(20) NOT NULL, PRIMARY KEY (studentID));");
-			stmt.executeUpdate("CREATE TABLE course (title varchar(20) NOT NULL, PRIMARY KEY (title));");			
+			stmt.executeUpdate("CREATE TABLE patient (patientID varchar(20) PRIMARY KEY," +
+														   "name varchar(30)," +
+															"surname varchar(30)," +
+															"date DATE," +
+															"insuranceCode varchar(60)" +
+					");");
+			stmt.executeUpdate("CREATE TABLE patientFolder (ID int PRIMARY KEY," +
+																 "patientID varchar(30)," +
+																 "visitID varchar(30)" +
+					");");
+			stmt.executeUpdate("CREATE TABLE course (title varchar(20) NOT NULL, PRIMARY KEY (title));");
 			stmt.executeUpdate("CREATE TABLE enrollment (studentID varchar(20) NOT NULL, title varchar(20) NOT NULL, PRIMARY KEY (studentID,title), FOREIGN KEY (studentID) REFERENCES student(studentID), FOREIGN KEY (title) REFERENCES course(title));");
 			System.out.println("Database initialized successfully");
 		}catch (Exception e) {
