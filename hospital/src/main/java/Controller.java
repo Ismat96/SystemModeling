@@ -1,27 +1,34 @@
+import jdk.nashorn.internal.runtime.UserAccessorProperty;
+
 import java.util.List;
 
 public class Controller {
 
-	public static boolean createCourse(String title){
-		boolean courseExists = CourseDAO.courseWithTitleExists(title);
-		if(!courseExists){
-			Course course = new Course();
-			course.setTitle(title);
-			CourseDAO.insertCourse(course);
+	public static boolean loginUser(String username, String password){
+		boolean userExists = UserDAO.userWithUsernameExists(username);
+		if(!userExists){
+			return false;
 		}
-		if(courseExists){
+		if(userExists){
+			if (validateUserPass(password)){
+				return true;
+			};
 			return false;
 		}else{
 			return true;
 		}
 	}
-	
-	public static boolean registerStudent(String studentID){
-		boolean stExists = StudentDAO.studentWithIDExists(studentID);
+
+
+
+	public static boolean registerUser(String username, String password, String role){
+		boolean stExists = UserDAO.userWithUsernameExists(username);
 		if(!stExists){
-			Student student = new Student();
-			student.setID(studentID);
-			StudentDAO.insertStudent(student);
+			User user = new User();
+			user.setUsername(username);
+			user.setPassword(password);
+			user.setRole(role);
+			UserDAO.insertUser(user);
 		}
 		if(stExists){
 			return false;
@@ -50,5 +57,10 @@ public class Controller {
 
 	public static List<Student> getStudents(String courseTitle) {
 		return EnrollmentDAO.getStudents(courseTitle);
+	}
+
+
+	private static boolean validateUserPass(String password) {
+		return UserDAO.checkPass(password);
 	}
 }

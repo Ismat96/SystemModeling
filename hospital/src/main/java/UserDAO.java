@@ -59,7 +59,7 @@ public class UserDAO {
         return output;
     }
 
-    public static boolean insertStudent(User user){
+    public static boolean insertUser(User user){
         Connection con = null;
         Statement stmt = null;
         int result = 0;
@@ -70,7 +70,9 @@ public class UserDAO {
             result = stmt.executeUpdate("INSERT INTO user VALUES ('"+user.getUsername()+"','" + user.getPassword()+"','"+ user.getRole()+"');");
             con.commit();
         }catch (Exception e) {
+
             e.printStackTrace(System.out);
+
         }
         if(result == 0){
             return false;
@@ -81,26 +83,34 @@ public class UserDAO {
     }
 
 
-//    public static User getUser(User user){
-//        Connection con = null;
-//        Statement stmt = null;
-//        ResultSet result = null;
-////        ArrayList<Student> output = new ArrayList<Student>();
-//
-//        User us = new User();
-//        try {
-//            Class.forName("org.hsqldb.jdbc.JDBCDriver");
-//            con = DriverManager.getConnection(
-//                    "jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
-//            stmt = con.createStatement();
-//            result = stmt.executeQuery(
-//                    "SELECT userID FROM user WHERE id = '"+user.getUsername()+"'");
-//
+    public static boolean checkPass(String password){
+        Connection con = null;
+        Statement stmt = null;
+        ResultSet result = null;
+//        ArrayList<Student> output = new ArrayList<Student>();
+        boolean output = false;
+        User us = new User();
+        try {
+            Class.forName("org.hsqldb.jdbc.JDBCDriver");
+            con = DriverManager.getConnection(
+                    "jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
+            stmt = con.createStatement();
+            result = stmt.executeQuery(
+                    "SELECT * FROM user WHERE password = '"+password+"'");
+
 //            us.setUsername(result.getString("username"));
-//
-//        } catch (Exception e) {
-//            e.printStackTrace(System.out);
-//        }
-//        return us;
-//    }
+//            us.setPassword(result.getString("password"));
+//            us.setRole(result.getString("role"));
+
+            while(result.next()){
+
+
+                output= true;
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace(System.out);
+        }
+        return output;
+    }
 }
