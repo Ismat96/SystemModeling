@@ -43,7 +43,7 @@ public class VisitDAO {
                     "INSERT INTO visit VALUES ('" + visit.getID() + "', '" +
                             visit.getPatientID() + "', '" +
                             visit.getOncologistID() + "', '" +
-                            visit.getFirstVisitDate() + "', '" +
+                            visit + "', '" +
                             "' )");
             con.commit();
         } catch (Exception e) {

@@ -20,6 +20,8 @@ public class UserDAO {
             result = stmt.executeQuery(
                     "SELECT * FROM user WHERE username = '"+username+"'");
             while(result.next()){
+
+
                 output= true;
             }
         } catch (Exception e) {
@@ -57,7 +59,7 @@ public class UserDAO {
         return output;
     }
 
-    public static boolean insertStudent(User user){
+    public static boolean insertUser(User user){
         Connection con = null;
         Statement stmt = null;
         int result = 0;
@@ -65,10 +67,12 @@ public class UserDAO {
             Class.forName("org.hsqldb.jdbc.JDBCDriver");
             con = DriverManager.getConnection( "jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
             stmt = con.createStatement();
-            result = stmt.executeUpdate("INSERT INTO user VALUES ('"+user.getUsername()+"','"+user.getUsername()+"','" + user.getPassword()+"','"+ user.getRole()+"');");
+            result = stmt.executeUpdate("INSERT INTO user VALUES ('"+user.getUsername()+"','" + user.getPassword()+"','"+ user.getRole()+"');");
             con.commit();
         }catch (Exception e) {
+
             e.printStackTrace(System.out);
+
         }
         if(result == 0){
             return false;
@@ -79,12 +83,12 @@ public class UserDAO {
     }
 
 
-    public static User getUser(User user){
+    public static boolean checkPass(String password){
         Connection con = null;
         Statement stmt = null;
         ResultSet result = null;
 //        ArrayList<Student> output = new ArrayList<Student>();
-
+        boolean output = false;
         User us = new User();
         try {
             Class.forName("org.hsqldb.jdbc.JDBCDriver");
@@ -92,13 +96,46 @@ public class UserDAO {
                     "jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
             stmt = con.createStatement();
             result = stmt.executeQuery(
-                    "SELECT userID FROM user WHERE id = '"+user.getUsername()+"'");
+                    "SELECT * FROM user WHERE password = '"+password+"'");
 
-            us.setUsername(result.getString("username"));
+//            us.setUsername(result.getString("username"));
+//            us.setPassword(result.getString("password"));
+//            us.setRole(result.getString("role"));
+
+            while(result.next()){
+
+
+                output= true;
+            }
 
         } catch (Exception e) {
             e.printStackTrace(System.out);
         }
-        return us;
+        return output;
+    }
+
+
+    public static String getUserRole(String username){
+        Connection con = null;
+        Statement stmt = null;
+        ResultSet resultSet = null;
+        User user = new User();
+        try {
+            Class.forName("org.hsqldb.jdbc.JDBCDriver");
+            con = DriverManager.getConnection(
+                    "jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
+            stmt = con.createStatement();
+            resultSet = stmt.executeQuery(
+                    "SELECT * FROM user WHERE username = '"+username+"'");
+
+            while(resultSet.next()) {
+                user.setUsername(resultSet.getString("username"));
+                user.setPassword(resultSet.getString("password"));
+                user.setRole(resultSet.getString("role"));
+            }
+        } catch (Exception e) {
+            e.printStackTrace(System.out);
+        }
+        return user.getRole();
     }
 }

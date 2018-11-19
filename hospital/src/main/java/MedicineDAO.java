@@ -15,7 +15,8 @@ public class MedicineDAO {
             Class.forName("org.hsqldb.jdbc.JDBCDriver");
             con = DriverManager.getConnection( "jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
             stmt = con.createStatement();
-            result = stmt.executeUpdate("INSERT INTO course VALUES ('"+medicine.getId()+"','"+medicine.getName()+"','" +medicine.getCompanyName()+"');");
+
+            result = stmt.executeUpdate("INSERT INTO medicine VALUES ('"+medicine.getId()+"','"+medicine.getName()+"','" +medicine.getCompanyName()+"');");
             con.commit();
         }catch (Exception e) {
             e.printStackTrace(System.out);
@@ -43,7 +44,9 @@ public class MedicineDAO {
 
             while(result.next()){
                 Medicine m = new Medicine();
+                m.setId(result.getLong("id"));
                 m.setName(result.getString("name"));
+                m.setCompanyName(result.getString("companyName"));
                 output.add(m);
             }
         } catch (Exception e) {
