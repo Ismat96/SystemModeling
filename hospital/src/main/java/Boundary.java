@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -16,9 +17,7 @@ public class Boundary {
             System.out.println("Select an option:");
             System.out.println("1. login");
             System.out.println("2. Register a new user");
-            System.out.println("3. Enroll an existing student in an existing course");
-            System.out.println("4. Get students");
-            System.out.println("5. Exit");
+
             int choice = new Integer(scan.nextLine());
             switch (choice) {
                 case 1:
@@ -29,9 +28,55 @@ public class Boundary {
                     boolean login = Controller.loginUser(username1, pass);
                     if (login) {
                         System.out.println("Logged in!");
+
+                        String role = Controller.getUserRole(username1).toLowerCase();
+
+//                        getDoctorFunctions(role);
+                        if (role.equals("doctor")) {
+                            while (true) {
+
+                                System.out.println("1. addNewMedicine");
+                                System.out.println("2. getMedicines");
+                                System.out.println("3. Exit");
+                                int choiceDoctor = new Integer(scan.nextLine());
+
+                                switch (choiceDoctor) {
+                                    case 1:
+                                        System.out.println("Insert id:");
+                                        long idMed = scan.nextLong();
+                                        scan.nextLine();
+                                        System.out.println("Insert name:");
+                                        String nameMed = scan.nextLine();
+                                        System.out.println("Insert company Name:");
+                                        String compNameMed = scan.nextLine();
+                                        Medicine med = new Medicine();
+                                        med.setId(idMed);
+                                        med.setName(nameMed);
+                                        med.setCompanyName(compNameMed);
+                                        if (MedicineDAO.insertMedicine(med)) {
+                                            System.out.println("Medicine inserted");
+                                        } else {
+                                            System.out.println("Failed while inserting medicine");
+                                        }
+                                        break;
+                                    case 2:
+                                        System.out.println((MedicineDAO.getMedicines()));
+                                        break;
+                                    case 3:
+                                        break;
+
+                                }
+
+                                if (choiceDoctor == 3){
+                                    break;
+                                }
+                            }
+                        }
                     } else {
                         System.out.println("Failed to log in");
                     }
+
+
                     break;
                 case 2:
                     System.out.println("Insert username:");
@@ -85,5 +130,9 @@ public class Boundary {
                 break;
         }
         scan.close();
+    }
+
+
+    private static void getDoctorFunctions(String role) {
     }
 }

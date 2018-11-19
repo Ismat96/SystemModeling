@@ -113,4 +113,29 @@ public class UserDAO {
         }
         return output;
     }
+
+
+    public static String getUserRole(String username){
+        Connection con = null;
+        Statement stmt = null;
+        ResultSet resultSet = null;
+        User user = new User();
+        try {
+            Class.forName("org.hsqldb.jdbc.JDBCDriver");
+            con = DriverManager.getConnection(
+                    "jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
+            stmt = con.createStatement();
+            resultSet = stmt.executeQuery(
+                    "SELECT * FROM user WHERE username = '"+username+"'");
+
+            while(resultSet.next()) {
+                user.setUsername(resultSet.getString("username"));
+                user.setPassword(resultSet.getString("password"));
+                user.setRole(resultSet.getString("role"));
+            }
+        } catch (Exception e) {
+            e.printStackTrace(System.out);
+        }
+        return user.getRole();
+    }
 }

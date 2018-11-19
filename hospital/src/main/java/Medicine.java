@@ -27,4 +27,13 @@ public class Medicine {
     public void setCompanyName(String companyName) {
         this.companyName = companyName;
     }
+
+    @Override
+    public String toString() {
+        return "Medicine{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", companyName='" + companyName + '\'' +
+                '}';
+    }
 }

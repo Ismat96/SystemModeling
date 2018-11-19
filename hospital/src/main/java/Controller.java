@@ -60,6 +60,11 @@ public class Controller {
 	}
 
 
+	public static String getUserRole(String username) {
+		return UserDAO.getUserRole(username);
+	}
+
+
 	private static boolean validateUserPass(String password) {
 		return UserDAO.checkPass(password);
 	}
