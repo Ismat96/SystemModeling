@@ -1,10 +1,29 @@
 public class PatientFolder {
     private int ID;
     private String patientID;
-    private String visitID;
+    private String oncologistID;
+    private String firstVisitDate;
+
+    public String getFirstVisitDate() {
+        return firstVisitDate;
+    }
+
+    public void setFirstVisitDate(String firstVisitDate) {
+        this.firstVisitDate = firstVisitDate;
+    }
+
+
 
     public int getID() {
         return ID;
+    }
+
+    public String getOncologistID() {
+        return oncologistID;
+    }
+
+    public void setOncologistID(String oncologistID) {
+        this.oncologistID = oncologistID;
     }
 
     public void setID(int ID) {
@@ -15,15 +34,9 @@ public class PatientFolder {
         this.patientID = patientID;
     }
 
-    public void setVisitID(String visitID) {
-        this.visitID = visitID;
-    }
-
     public String getPatientID() {
         return patientID;
     }
 
-    public String getVisitID() {
-        return visitID;
-    }
+
 }

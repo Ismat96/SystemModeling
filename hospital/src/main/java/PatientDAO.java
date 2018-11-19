@@ -7,7 +7,7 @@ import java.sql.Statement;
 public class PatientDAO {
 
 
-    public Patient getPatient(String ID) {
+    public static  Patient getPatient(String ID) {
         Connection con = null;
         Statement stmt = null;
         ResultSet result = null;

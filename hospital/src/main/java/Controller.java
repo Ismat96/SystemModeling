@@ -15,7 +15,27 @@ public class Controller {
 			return true;
 		}
 	}
-	
+
+	public static boolean deletePatientFolder(int ID) {
+	    boolean result = false;
+	    boolean patientFldrExist = PatientFolderDAO.patientFolderExist(ID);
+	    if (patientFldrExist){
+            result = PatientFolderDAO.deletePatientFolder(ID);
+        }
+        return result;
+    }
+
+    public static boolean openFolder(String patientID, String specialistID) {
+
+	    Patient patient = PatientDAO.getPatient(patientID);
+
+	    PatientFolder patientFolder = new PatientFolder();
+	    patientFolder.setPatientID(patient.getPatientID());
+	    patientFolder.setOncologistID(specialistID);
+	    return PatientFolderDAO.insertFolder(patientFolder);
+
+    }
+
 	public static boolean registerStudent(String studentID){
 		boolean stExists = StudentDAO.studentWithIDExists(studentID);
 		if(!stExists){
