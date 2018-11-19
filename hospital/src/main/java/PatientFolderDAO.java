@@ -15,7 +15,8 @@ public class PatientFolderDAO {
             result = stmt.executeUpdate(
                     "INSERT INTO patientFolder VALUES ('" + patientFolder.getID() + "', '" +
                                                                 patientFolder.getPatientID() + "', '" +
-                                                                patientFolder.getVisitID() + "', '" +
+                                                                patientFolder.getOncologistID() + "', '" +
+                                                                patientFolder.getFirstVisitDate() + "', '" +
                                                             "' )");
             con.commit();
         } catch (Exception e) {
