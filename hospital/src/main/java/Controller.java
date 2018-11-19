@@ -37,22 +37,32 @@ public class Controller {
 		}
 	}
 
-	public static int enrollStudent(String studentID, String courseTitle){
-		boolean stExists = StudentDAO.studentWithIDExists(studentID);
-		if(!stExists)
-			return -1;  // Student does not exist
-		boolean courseExists = CourseDAO.courseWithTitleExists(courseTitle);
-		if(!courseExists)
-			return -2;  // Course does not exist
-		boolean enrollExists = EnrollmentDAO.enrollmentExists(studentID, courseTitle);
-		if(enrollExists)
-			return -3;  // Student already enrolled in the course
-		boolean output = EnrollmentDAO.insertEnrollment(studentID, courseTitle);
-		if(output)
-			return 0;
-		else
-			return -4;
+
+	public static boolean addNewMedicine(Medicine med){
+		return MedicineDAO.insertMedicine(med);
 	}
+
+	public static List<Medicine> getMedicines(){
+		return MedicineDAO.getMedicines();
+	}
+//
+//
+//	public static int enrollStudent(String studentID, String courseTitle){
+//		boolean stExists = StudentDAO.studentWithIDExists(studentID);
+//		if(!stExists)
+//			return -1;  // Student does not exist
+//		boolean courseExists = CourseDAO.courseWithTitleExists(courseTitle);
+//		if(!courseExists)
+//			return -2;  // Course does not exist
+//		boolean enrollExists = EnrollmentDAO.enrollmentExists(studentID, courseTitle);
+//		if(enrollExists)
+//			return -3;  // Student already enrolled in the course
+//		boolean output = EnrollmentDAO.insertEnrollment(studentID, courseTitle);
+//		if(output)
+//			return 0;
+//		else
+//			return -4;
+//	}
 
 
 	public static List<Student> getStudents(String courseTitle) {

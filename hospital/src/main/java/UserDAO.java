@@ -5,8 +5,16 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * UseDAO.java
+ */
 public class UserDAO {
 
+    /**
+     * checks whether user with specified username exists or not
+     * @param username
+     * @return returns true if user exists false otherwise
+     */
     public static boolean userWithUsernameExists(String username){
         Connection con = null;
         Statement stmt = null;
@@ -31,34 +39,39 @@ public class UserDAO {
     }
 
 
-    public static boolean login(String username, String password){
-        Connection con = null;
-        Statement stmt = null;
-        ResultSet result = null;
-        boolean output = false;
-        try {
-            Class.forName("org.hsqldb.jdbc.JDBCDriver");
-            con = DriverManager.getConnection(
-                    "jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
-            stmt = con.createStatement();
-            result = stmt.executeQuery(
-                    "SELECT * FROM user WHERE username = '"+username+"'");
-            while(result.next()){
-                String pass = result.getString("password");
-                if (pass.equals(password)){
-                    output= true;
-                }else {
-                    output = false;
-                }
+//    public static boolean login(String username, String password){
+//        Connection con = null;
+//        Statement stmt = null;
+//        ResultSet result = null;
+//        boolean output = false;
+//        try {
+//            Class.forName("org.hsqldb.jdbc.JDBCDriver");
+//            con = DriverManager.getConnection(
+//                    "jdbc:hsqldb:hsql://localhost/hospitaldb", "SA", "");
+//            stmt = con.createStatement();
+//            result = stmt.executeQuery(
+//                    "SELECT * FROM user WHERE username = '"+username+"'");
+//            while(result.next()){
+//                String pass = result.getString("password");
+//                if (pass.equals(password)){
+//                    output= true;
+//                }else {
+//                    output = false;
+//                }
+//
+//            }
 
-            }
+//        } catch (Exception e) {
+//            e.printStackTrace(System.out);
+//        }
+//        return output;
+//    }
 
-        } catch (Exception e) {
-            e.printStackTrace(System.out);
-        }
-        return output;
-    }
-
+    /**
+     * Inserts new user to the system
+     * @param user
+     * @return true if user inserted false otherwise
+     */
     public static boolean insertUser(User user){
         Connection con = null;
         Statement stmt = null;
@@ -83,6 +96,11 @@ public class UserDAO {
     }
 
 
+    /**
+     * checks password of user
+     * @param password
+     * @return true if password is correct false otherwise
+     */
     public static boolean checkPass(String password){
         Connection con = null;
         Statement stmt = null;
@@ -114,7 +132,11 @@ public class UserDAO {
         return output;
     }
 
-
+    /**
+     * Returns user by username
+     * @param username
+     * @return User role
+     */
     public static String getUserRole(String username){
         Connection con = null;
         Statement stmt = null;

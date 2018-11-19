@@ -7,7 +7,6 @@ public class DatabaseManager {
 	public static void initializeDatabase(){
 		Connection con = null;
 		Statement stmt = null;
-        System.out.println("========================= " + con);
 
         try {
 			Class.forName("org.hsqldb.jdbc.JDBCDriver");
@@ -42,7 +41,6 @@ public class DatabaseManager {
 	public static void resetDatabase(){
 		Connection con = null;
 		Statement stmt = null;
-        System.out.println("====0000===================== " + con);
 
 		try {
 			Class.forName("org.hsqldb.jdbc.JDBCDriver");

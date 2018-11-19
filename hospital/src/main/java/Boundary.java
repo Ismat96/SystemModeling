@@ -7,7 +7,6 @@ public class Boundary {
 
     public static void main(String[] args) {
         System.out.println("Do you want to initialize the database? (Y/N)");
-        System.out.println("dsadsa");
         Scanner scan = new Scanner(System.in);
         if (scan.nextLine().equals("Y")) {
             DatabaseManager.resetDatabase();
@@ -17,6 +16,7 @@ public class Boundary {
             System.out.println("Select an option:");
             System.out.println("1. login");
             System.out.println("2. Register a new user");
+            System.out.println("3. Exit");
 
             int choice = new Integer(scan.nextLine());
             switch (choice) {
@@ -53,24 +53,29 @@ public class Boundary {
                                         med.setId(idMed);
                                         med.setName(nameMed);
                                         med.setCompanyName(compNameMed);
-                                        if (MedicineDAO.insertMedicine(med)) {
+                                        if (Controller.addNewMedicine(med)) {
                                             System.out.println("Medicine inserted");
                                         } else {
                                             System.out.println("Failed while inserting medicine");
                                         }
                                         break;
                                     case 2:
-                                        System.out.println((MedicineDAO.getMedicines()));
+                                        System.out.println((Controller.getMedicines()));
                                         break;
                                     case 3:
                                         break;
 
                                 }
 
-                                if (choiceDoctor == 3){
+                                if (choiceDoctor == 3) {
                                     break;
                                 }
                             }
+                        } else if (role.equals("receptionist")){
+                            //TODO add receptionist's functions
+                            System.out.println("Recep");
+                        } else {
+                            System.out.println("**Could not find any functions for that role, please select one of these roles (doctor, receptionist) while REGISTERING to the system ");
                         }
                     } else {
                         System.out.println("Failed to log in");
@@ -85,6 +90,8 @@ public class Boundary {
                     System.out.println("Insert password:");
                     String password = scan.nextLine();
 
+                    System.out.println("Please select one among these roles (doctor, receptionist)");
+
                     System.out.println("Insert role: ");
                     String role = scan.nextLine();
 
@@ -96,37 +103,37 @@ public class Boundary {
                         System.out.println("Register failed!");
                     }
                     break;
-                case 3:
-                    System.out.println("Insert course title:");
-                    String courseTitle = scan.nextLine();
-                    System.out.println("Insert student ID:");
-                    String studentID = scan.nextLine();
-                    int enrolled = Controller.enrollStudent(studentID, courseTitle);
-                    if (enrolled == 0)
-                        System.out.println("Student enrolled in the course!");
-                    if (enrolled == -1)
-                        System.out.println("Student does not exist!");
-                    if (enrolled == -2)
-                        System.out.println("Course does not exist!");
-                    if (enrolled == -3)
-                        System.out.println("Student already enrolled in the course!");
-                    if (enrolled == -3)
-                        System.out.println("Query failed!");
-                    break;
-                case 4:
-                    System.out.println("Insert course title:");
-                    String course = scan.nextLine();
-                    List<Student> students = Controller.getStudents(course);
-                    System.out.println("Students enrolled for " + course + ":");
-                    for (Student s : students) {
-                        System.out.println(s.getID());
-                    }
-                    break;
+//                case 3:
+//                    System.out.println("Insert course title:");
+//                    String courseTitle = scan.nextLine();
+//                    System.out.println("Insert student ID:");
+//                    String studentID = scan.nextLine();
+//                    int enrolled = Controller.enrollStudent(studentID, courseTitle);
+//                    if (enrolled == 0)
+//                        System.out.println("Student enrolled in the course!");
+//                    if (enrolled == -1)
+//                        System.out.println("Student does not exist!");
+//                    if (enrolled == -2)
+//                        System.out.println("Course does not exist!");
+//                    if (enrolled == -3)
+//                        System.out.println("Student already enrolled in the course!");
+//                    if (enrolled == -3)
+//                        System.out.println("Query failed!");
+//                    break;
+//                case 4:
+//                    System.out.println("Insert course title:");
+//                    String course = scan.nextLine();
+//                    List<Student> students = Controller.getStudents(course);
+//                    System.out.println("Students enrolled for " + course + ":");
+//                    for (Student s : students) {
+//                        System.out.println(s.getID());
+//                    }
+//                    break;
                 default:
-                    choice = 5;
+                    choice = 3;
                     break;
             }
-            if (choice == 5)
+            if (choice == 3)
                 break;
         }
         scan.close();

@@ -4,8 +4,7 @@
     <list default="true" id="6459396b-2d70-402f-bb1e-5b7c38e3238a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Boundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Boundary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Medicine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Medicine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MedicineDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MedicineDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserDAO.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -54,22 +53,22 @@
     <session id="1509855651">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1644" />
+          <entry key="java" value="2530" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1644" />
+          <entry key="JAVA" value="2530" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="6" />
+          <entry key="java" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="11" />
         </counts>
       </usages-collector>
     </session>
@@ -77,33 +76,16 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+            <state relative-caret-position="1003">
+              <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#836#837#0" expanded="true" />
+                <element signature="e#880#881#0" expanded="true" />
+                <element signature="e#936#937#0" expanded="true" />
+                <element signature="e#966#967#0" expanded="true" />
                 <element signature="e#1571#1572#0" expanded="true" />
                 <element signature="e#1623#1624#0" expanded="true" />
                 <element signature="e#1540#1541#0" expanded="true" />
@@ -114,25 +96,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/UserDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PatientDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="117" column="32" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Boundary.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-117">
-              <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -140,11 +107,64 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MedicineDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-334">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="40">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1128#1138#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55">
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/UserDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="142" column="35" lean-forward="true" selection-start-line="142" selection-start-column="35" selection-end-line="142" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CourseDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Course.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Boundary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-936">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -160,28 +180,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Student.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/EnrollmentDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="66" column="42" lean-forward="true" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -213,11 +215,11 @@
         <option value="$PROJECT_DIR$/src/main/java/DAOs/PatientFolderDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/PatientFolderDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DatabaseManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/MedicineDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/Medicine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DatabaseManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/Boundary.java" />
       </list>
     </option>
@@ -252,10 +254,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="15" />
-    <option name="y" value="30" />
-    <option name="width" value="1890" />
-    <option name="height" value="930" />
+    <option name="x" value="-12" />
+    <option name="width" value="981" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -304,7 +305,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="settings&#9;ACTION&#9;WelcomeScreen.Settings" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542629174188" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542652656134" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/SystemModeling/ExampleCode/ExampleCode" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -371,7 +372,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16940000" />
+    <option name="totallyTimeSpent" value="28186000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -395,7 +396,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17793594" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.6850534" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2508897" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -450,13 +451,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DatabaseManager.java</url>
-          <line>17</line>
+          <line>16</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DatabaseManager.java</url>
-          <line>37</line>
+          <line>36</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -468,19 +469,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Boundary.java</url>
-          <line>11</line>
+          <line>10</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Boundary.java</url>
-          <line>9</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Boundary.java</url>
-          <line>13</line>
+          <line>12</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
@@ -502,16 +497,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Class.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/CourseDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PatientFolderDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -550,83 +535,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PatientDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MedicineDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-334">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1128#1138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StudentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Boundary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-117">
-          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="117" column="32" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1571#1572#0" expanded="true" />
-            <element signature="e#1623#1624#0" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
-            <element signature="e#1568#1569#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -644,6 +556,99 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="516">
           <caret line="66" column="42" lean-forward="true" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/StudentDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CourseDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MedicineDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="142" column="35" lean-forward="true" selection-start-line="142" selection-start-column="35" selection-end-line="142" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PatientDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Boundary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-936">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#1571#1572#0" expanded="true" />
+            <element signature="e#1623#1624#0" expanded="true" />
+            <element signature="e#1540#1541#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
         </state>
       </provider>
     </entry>
